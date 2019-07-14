@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>RSS 简单介绍</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/css/katex.min.css" />
+  <link rel="stylesheet" href="../static/css/wiki.css" />
+  <link rel="stylesheet" href="../static/css/codehilite.css" />
+  <script src="../static/js/katex.min.js"></script>
+  <script src="../static/js/qrcode.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../static/css/slides.css" />
+</head>
+
+<body>
+  <textarea id="source">
+
+class: center, middle
+
+## 扫码在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# RSS 简单介绍
+
+### 崔容皓
+
+---
+
+## 为什么要有 RSS
+
+* 微博，知乎，微信公众号，今日头条...
+* 需要浏览的网站和 APP 越来越多，难以顾及
+* 一些网站和博客不常更新，时常忘记浏览
+* 智能推荐算法导致的“信息茧房”
+
+---
+
+## 什么是 RSS
+
+* Really Simple Syndication 简易信息聚合
+* 一种消息来源的格式规范
+* 可以方便地将各个地方的新资讯整合到一处
+* 方便浏览，快捷及时，避免信息茧房
+
+---
+
+## 为什么 RSS 现在不流行
+
+* 对于 RSS 阅读器：不赚钱
+* 对于阅读者：有“技术门槛”
+* 对于内容提供者：破坏商业模式
+
+---
+
+## RSS 进阶
+
+### RSS 阅读器
+
+* 全平台：[inoreader](https://www.inoreader.com/?lang=zh_CN)
+* Mac & iOS: [reeder](https://reederapp.com/)
+* 自己搭建：[ttrss](https://tt-rss.org/)
+
+### RSS 源哪里找
+
+* 对于网站与博客：很有可能自带 RSS
+* 对于无 RSS 的网站：烧录 RSS eg：Feed43
+* 对于 APP 和其他平台：[RSSHub - 万物皆可 RSS](https://docs.rsshub.app/)
+
+---
+
+class: center, middle
+
+# Thanks!
+
+.center[个人网站：<a href="https://idealclover.top" id="this-slide-url" target="_blank">https://idealclover.top</a>]
+<div id="idealclover" style="margin: 0 auto; width: 286px;"></div>
+
+    </textarea>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({ratio: '16:9'});
+    var url_pure = document.URL.split("#")[0];
+    document.getElementById("this-slide-url").innerHTML = url_pure;
+    document.getElementById("this-slide-url").href = url_pure;
+    new QRCode(document.getElementById("qrcode"), {
+      text: url_pure,
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+    new QRCode(document.getElementById("idealclover"), {
+      text: "https://idealclover.top",
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//analytics.idealclover.cn/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document,
+        g = d.createElement('script'),
+        s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript';
+      g.async = true;
+      g.defer = true;
+      g.src = u + 'matomo.js';
+      s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+</body>
+
+</html>

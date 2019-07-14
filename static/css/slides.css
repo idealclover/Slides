@@ -1,0 +1,82 @@
+body {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi mi    cro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    text-align: justify;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.red {
+  color:red;
+}
+.green {
+  color:green;
+}
+.gray {
+  color:gray;
+}
+.orange {
+  color:orange;
+}
+
+
+
+s {
+  color:red;
+}
+
+n {
+  color:blue;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  font-size: 24px;
+  padding: 2 20 2 20;
+}
+
+th {
+  background-color: #101020;
+  color: white;
+}
+
+td {
+  border-bottom: 1px solid #a0a0a0;
+}
+
+img {
+  margin: 15px 15px 15px 15px;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+blockquote {
+  color: #404084;
+  font-size: 24px;
+}
+
+.remark-slide-content {
+  font-size: 24px;
+  font-family: 'Crimson Text', 'STXihei', 'CMU Serif', 'STSong', 'STSongTi', 'SimSun', 'Serif';
+}
+
+h1 {
+  font-family: 'Arial', 'SimHei', 'Sans';
+  margin-bottom: 45px;
+}
+
+h2, h3, h4 {
+  font-family: 'Arial', 'SimHei', 'Sans';
+}
+
+strong {
+  font-family: 'Arial', 'SimHei', 'Sans';
+}
+
+.katex { font-size: 1.0em; }

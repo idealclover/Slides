@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>笔记方法分享</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../static/css/katex.min.css" />
+  <link rel="stylesheet" href="../../static/css/wiki.css" />
+  <link rel="stylesheet" href="../../static/css/codehilite.css" />
+  <script src="../../static/js/katex.min.js"></script>
+  <script src="../../static/js/qrcode.js"></script>
+  <script src="../../static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../static/css/slides.css" />
+</head>
+
+<body>
+  <textarea id="source">
+
+class: center, middle
+
+## 扫码在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 笔记方法分享
+
+## idealclover
+
+.center[<a href="https://idealclover.top/archives/625/" target="_blank">https://idealclover.top/archives/625/</a>]
+
+
+---
+
+## 传统笔记的缺陷
+
+* 传统笔记的树状结构
+* 顶层的笔记本应当如何设计
+  * 很难“不重不漏”
+  * 关联看似没关系的知识恰恰是最大的突破
+  * 难以归类、限制了相关知识的碰撞
+
+---
+
+## 卡片式笔记
+
+* 树和图
+* zettelkasten笔记法
+* 一点改良的方法
+  * 方便地让知识互相引用；
+  * 让知识间的引用关系可视化；
+  * 让我可以“随机”地访问卡片——定期审视知识并获得新的灵感。
+* Roam Research
+
+---
+
+## Roam Research
+
+* 优点
+  * “平权”的笔记
+  * 很容易的相互引用
+  * “每日记录”
+* 缺点
+  * always online
+  * 太贵了
+  * 加载太慢了
+
+---
+
+## Obsidian
+
+* 文件存放与本地
+* 软件本体免费
+* 贴心的小插件
+* 颜值高
+---
+
+## 关于记笔记，最重要的事情
+
+1、互相连结
+
+2、定期回顾
+
+以及最重要的
+
+0、从现在开始
+
+---
+
+class: center, middle
+
+# Thanks!
+
+.center[个人网站：<a href="https://idealclover.top" id="this-slide-url" target="_blank">https://idealclover.top</a>]
+<div id="idealcloverr" style="margin: 0 auto; width: 286px;"></div>
+
+    </textarea>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({ratio: '16:9'});
+    var url_pure = document.URL.split("#")[0];
+    document.getElementById("this-slide-url").innerHTML = url_pure;
+    document.getElementById("this-slide-url").href = url_pure;
+    new QRCode(document.getElementById("qrcode"), {
+      text: url_pure,
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+    new QRCode(document.getElementById("idealcloverr"), {
+      text: "https://idealclover.top",
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112910356-7');
+  </script>
+
+</body>
+
+</html>

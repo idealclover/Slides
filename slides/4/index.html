@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>个人项目开发经验分享</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../static/css/katex.min.css" />
+  <link rel="stylesheet" href="../../static/css/wiki.css" />
+  <link rel="stylesheet" href="../../static/css/codehilite.css" />
+  <script src="../../static/js/katex.min.js"></script>
+  <script src="../../static/js/qrcode.js"></script>
+  <script src="../../static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../static/css/slides.css" />
+</head>
+
+<body>
+  <textarea id="source">
+
+class: center, middle
+
+## 扫码在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 个人项目开发经验分享
+
+### idealclover
+
+---
+
+## 我的项目
+
+* 南哪课表（1.8k+ users）
+* Easy-to-RSS（2k+ users, 300+ stars）
+* 我要戴口罩小程序（80w+ uv，100+ stars）
+* ...
+
+---
+
+## 个人经历
+
+大一：学习、社团、学术
+
+大二：学习、社团
+* 开始二专学习
+* **项目**：个人网站
+* 注意到产品经理
+
+大三：项目、实习
+  * 上：PM+、**Amazon 实习**、**项目**：chrome 插件/安卓 APP
+  * 下：**项目**：活动网站/南哪课程复习资料
+  * 暑假：**京东 JDRUN**
+
+大四：秋招、项目
+  * 上 **字节**、安卓&iOS APP
+  * 下 小程序、毕业论文、网站
+
+---
+
+## 南哪课表
+
+* 2018.7 着手进行开发
+* 2018.9 第一版本上线
+* 2019.3 丢密钥重新发布
+* 2019.9 苹果版本上线
+
+---
+
+## 产品诞生流程
+
+* 产品调研 - 产品
+* 产品设计 - 产品
+* 原型设计 - 设计
+* 产品开发 - 开发
+* 产品宣传 - 共同
+* 产品迭代 - 产品
+
+---
+
+## 产品调研
+
+* 市面上有哪些竞品
+* 我们的切入点和重点功能是什么
+* 我们有哪些可以借助的方案
+* 尤其注意开源社区
+
+---
+
+## 产品设计
+
+* 分清核心功能，以打造 MVP 方案优先
+* 定好时间轴，及时督促且做好预备方案与缓冲
+* 多**直接**参与到项目中，判断想法是否与预期一致
+
+---
+
+## 原型设计
+
+* 在 2C 项目中设计是十分重要的
+* 设计的同时多于开发交流
+* 尽量使用开发的脚手架进行设计
+
+---
+
+## 产品开发
+
+* 害，什么都是俩小时突击出来的
+* 前期数据方案设计尽可能考虑到拓展性
+* 前期不熟悉框架的时候以开发为主，切忌代码强迫症
+* 多使用成熟的脚手架/开源项目
+* 对于本地客户端：更新功能
+* 妥善保管密钥文件，做好 SOP
+
+---
+
+## 产品宣传
+
+* 多和官方或活跃号进行PY
+* 注意腾讯的限制（链接、二维码等）
+* 提供反馈通道，持续跟踪用户反馈
+
+---
+
+class: center, middle
+
+# Thanks!
+
+.center[个人网站：<a href="https://idealclover.top" id="this-slide-url" target="_blank">https://idealclover.top</a>]
+<div id="idealcloverqr" style="margin: 0 auto; width: 286px;"></div>
+
+    </textarea>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({ratio: '16:9'});
+    var url_pure = document.URL.split("#")[0];
+    document.getElementById("this-slide-url").innerHTML = url_pure;
+    document.getElementById("this-slide-url").href = url_pure;
+    new QRCode(document.getElementById("qrcode"), {
+      text: url_pure,
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+    new QRCode(document.getElementById("idealcloverqr"), {
+      text: "https://idealclover.top",
+      width: 256,
+      height: 256,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112910356-7');
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      大厂故事系列活动-留守篇
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../static/css/katex.min.css" />
+    <link rel="stylesheet" href="../../static/css/wiki.css" />
+    <link rel="stylesheet" href="../../static/css/codehilite.css" />
+    <script src="../../static/js/katex.min.js"></script>
+    <script src="../../static/js/qrcode.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/slides.css" />
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+## 在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 大厂故事系列活动-留守篇
+
+## by idealclover
+
+---
+
+# 我是谁
+
+* @idealclover
+* 2020 - 南大本科毕业
+* 校招加入字节，商业化平台方向，4年+
+* 独立开发者、博主、UP主...
+* 个人主页 https://idealclover.cn
+
+---
+
+# 我的经历
+
+* 在校期间：个人项目、亚马逊/京东实习 -> 字节校招
+* 20年：熟悉业务、处理迭代需求【业务】
+* 21年：临时紧急需求【信心】
+* 22年-23年：参与重点项目，负责独立模块【判断】
+* 24年：随重点项目独立负责方向【责任】
+
+---
+
+## 我为什么做出对应的选择
+
+* 个人能力：并非一蹴而就，每个阶段都有艰难
+  * 能力模型：业务逻辑->执行能力->判断能力
+    * 业务逻辑：对业务、客户、行业，以及内外部本身的理解
+    * 执行能力：如何将项目落地、与内外合作方高效沟通
+    * 判断能力：对项目本身是否做、怎么做，有清晰的判断（内部视角&全局视角）
+  * 三者虽然并不严格存在先后，但大体上需要按层递进，很难求急
+
+--
+
+* 团队视角：工作是一个团队成员互相磨合的过程
+  * 不管是熟悉上级和同事的风格，还是让周围人熟悉&相信自己，都很重要
+  * 做一些事情需要对团队的责任感和归属感
+  * 盲目换团队/换方向未必解决本质问题
+
+---
+
+## 相关选择的得与失
+
+* 在一个领域深耕的好处
+  * 减少了很多重复学习基础的工作&磨合成本
+  * 有助于树立基础的自信，确定能力边界
+* 在一个公司/方向待久的坏处
+  * 薪资上确实可能会增长慢一点
+  * 容易丧失新鲜感--需要想办法持续拓展边界
+  * 可能会缺乏一些广义上的视野--多出去交流
+  * 可能会有很多自认为错失的机会
+
+---
+
+## 如果再来一遍我会怎么选--如何决策？
+
+* 不必强求留下，但也不要为了离开而离开
+* 重点是，几十年后你想做成什么样的事情
+* 如果目标是自己的事业，那就要重在成长，而非一时得失
+* 但反过来，如果当前还没有“事业”，以当前工作优先
+
+.center[![:img 我该选什么工作, 50%](1.jpg)]
+
+---
+
+## 一点不成熟的建议
+
+* 下限调低
+  * 人生是一场马拉松，不必要求时时进步
+  * 能独立生存本身就是优秀线以上
+  * 每个阶段都有每个阶段的难题，并没有幼稚与成熟区别
+* 上限调高
+  * 找到自己努力的方向，不必追赶热点
+  * 世界上并不存在“版本答案”，完善自己才是正道
+  * 要对未来有种盲目的乐观，“冰雕还是冰碴子，都会融化流入大海”
+* 积极准备，等待时机
+  * 事情不会一直坏下去
+  * 哪怕是冬天，也可以卖羽绒服
+  * 下一个风口指不定在哪
+
+---
+
+## “斗罢艰险又出发”
+
+* “我们都会拥有美好的未来”
+
+.center[![:img 翠翠, 50%](7.png)]
+
+.center[**Thanks!**]
+
+    </textarea>
+    <script src="../../static/js/remark-latest.min.js"></script>
+    <script>
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        return (
+          '<img alt="' +
+          altText +
+          '" src="' +
+          url +
+          '" style="width: ' +
+          width +
+          '" />'
+        );
+      };
+      var slideshow = remark.create({ ratio: "16:9" });
+      var url_pure = document.URL.split("#")[0];
+      document.getElementById("this-slide-url").innerHTML = url_pure;
+      document.getElementById("this-slide-url").href = url_pure;
+      new QRCode(document.getElementById("qrcode"), {
+        text: url_pure,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+      // new QRCode(document.getElementById("idealcloverqr"), {
+      //   text: "https://idealclover.top",
+      //   width: 256,
+      //   height: 256,
+      //   colorDark: "#000000",
+      //   colorLight: "#ffffff",
+      //   correctLevel: QRCode.CorrectLevel.H
+      // });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-112910356-7");
+    </script>
+  </body>
+</html>

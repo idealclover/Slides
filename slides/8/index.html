@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>简历制作: 建议原则与实用工具</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../static/css/katex.min.css" />
+    <link rel="stylesheet" href="../../static/css/wiki.css" />
+    <link rel="stylesheet" href="../../static/css/codehilite.css" />
+    <script src="../../static/js/katex.min.js"></script>
+    <script src="../../static/js/qrcode.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/slides.css" />
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+## 在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 简历制作: 建议原则与实用工具
+
+### idealclover
+
+---
+
+### 个人介绍
+
+> 翠翠/idealclover
+
+* 南大20届商院本科
+* 字节跳动校招产品经理-广告平台方向
+* 独立开发者 https://idealclover.top/
+
+.center[![:img idealclover, 50%](2.png)]
+
+---
+
+public: True
+class: center, middle
+
+# Part 1: 简历制作的建议原则
+
+---
+
+### 像做产品一样做简历
+
+> 简历制作: 建议原则
+
+* 光环再多，不如经历对口
+* 目标明确，放大简历重点
+* 避免废话，确保简历中的每个字都能有所讲
+
+---
+
+### STAR法则
+
+> 简历制作: 建议原则
+
+* [STAR原则_百度百科](https://baike.baidu.com/item/STAR%E5%8E%9F%E5%88%99/9889036)
+* Situation（情景）:事情是在什么情况下发生
+* Task（任务）: 你是如何明确你的目标的
+* Action（行动）: 针对这样的情况分析，你采用了什么行动方式
+* Result（结果）: 结果怎样，在这样的情况下你学习到了什么
+
+---
+
+public: True
+class: center, middle
+
+# Part 2: 简历制作的实用工具
+
+---
+
+### 大语言模型
+
+> Part 2: 简历制作: 实用工具
+
+* ChatGPT/Poe/文心/Kimi Chat
+* 简历制作: 梳理简历框架
+  * 将文档/材料丢进去，进行要点的梳理，“请使用STAR法则总结”
+* 简历调优: 定向进行简历优化
+  * “在简历中，该如何优化这句话” 或 “这句话在简历中如何书面表达”
+  * 请修改我的简历，使其更符合应聘岗位的要求，并突出我的优势和经验。
+  * 我将向你提供一份我有兴趣申请的职位的工作描述。你要阅读工作描述，了解该职位的关键要求–包括工作年限、技能、职位名称。之后，我将给你我的简历。你要仔细阅读，并根据我的简历对该工作的量身定做程度提供反馈。
+* 模拟面试: 阅读简历提问题
+
+---
+
+### LaTex
+
+> Part 2: 简历制作: 实用工具
+
+* 避免频繁的格式调整与统一、方便维护迭代
+* 要有良好的版本管理意识
+* overleaf: https://www.overleaf.com/
+* 典型模板: [Chinese Resume Template](https://www.overleaf.com/latex/templates/chinese-resume-template-zhong-wen-jian-li-mo-ban/fbdypsjmgwbb)
+
+.center[![:img latex, 50%](1.png)]
+
+---
+
+public: True
+class: center, middle
+
+# Part 3: 小建议
+
+---
+
+### 小建议
+
+> Part3: 小建议
+
+* 投递中：多投、多总结、多反思
+  * 可以被拒无数次，但只需要成功一次
+* 实习中：以“产出简历”为要求，审视自己的工作
+  * 多想“干这件事的目的是什么”
+  * 多收集可供量化的可靠数据评价
+* 决择中：想远一点
+  * 不要因为“大家都去”而盲目跟风
+  * 时代在变，追随自己的判断与热爱
+
+---
+
+### 小广告
+
+* 个人网站: [idealclover.top](https://idealclover.top)
+* 字节内推: [内推链接](https://job.toutiao.com/s/NA2djPD)
+* QQ 1455169173/WX cuironghaoo 可查进度/沟通交流
+
+.center[![:img 翠翠, 50%](7.png)]
+
+.center[**Thanks!**]
+
+    </textarea>
+    <script src="../../static/js/remark-latest.min.js"></script>
+    <script>
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        return (
+          '<img alt="' +
+          altText +
+          '" src="' +
+          url +
+          '" style="width: ' +
+          width +
+          '" />'
+        );
+      };
+      var slideshow = remark.create({ ratio: "16:9" });
+      var url_pure = document.URL.split("#")[0];
+      document.getElementById("this-slide-url").innerHTML = url_pure;
+      document.getElementById("this-slide-url").href = url_pure;
+      new QRCode(document.getElementById("qrcode"), {
+        text: url_pure,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+      // new QRCode(document.getElementById("idealcloverqr"), {
+      //   text: "https://idealclover.top",
+      //   width: 256,
+      //   height: 256,
+      //   colorDark: "#000000",
+      //   colorLight: "#ffffff",
+      //   correctLevel: QRCode.CorrectLevel.H
+      // });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-112910356-7");
+    </script>
+  </body>
+</html>

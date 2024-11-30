@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      简单唠唠广告产品
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../static/css/katex.min.css" />
+    <link rel="stylesheet" href="../../static/css/wiki.css" />
+    <link rel="stylesheet" href="../../static/css/codehilite.css" />
+    <script src="../../static/js/katex.min.js"></script>
+    <script src="../../static/js/qrcode.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/slides.css" />
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+## 在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 简单唠唠广告产品
+
+## by idealclover
+
+---
+
+# 咱讲点啥
+
+* 我是谁
+* 广告行业现状
+* 广告系统简述
+* 广告产品在干啥
+* 求职准备
+
+---
+
+# 开始前 - 小调查
+
+* 完全不了解广告&广告产品 - 1
+* 有了解，但没有相关实习/工作经历 - 2
+* 有相关实习/工作经历，但不够深入 - 3
+* 有相关实习/工作经历，且有深入了解 - 4
+
+## 我是谁
+
+* @idealclover
+* 2020 - 南大本科毕业 亚马逊&京东B端产品实习
+* 校招加入字节，商业化-广告平台方向，4年+
+* 独立开发者、博主、UP主...
+* 个人主页 https://idealclover.cn
+
+---
+
+# 广告行业现状
+
+* 广告产业大致占整体GDP的1%
+* 其中互联网广告已占业务总量中的8成
+* 相较于线下广告形式，互联网广告效果直观可度量
+
+> 广告是由已确定的出资人通过各种媒介进行的有关产品（商品、服务和观点）的,通常是有偿的、有组织的、综合的、劝服性的非人员的信息传播活动。
+>
+> --William F.Arens《当代广告学》
+
+---
+
+# 广告行业角色
+
+* 广告平台（媒体）：为广告主提供广告投放的地方，自身依托广告变现
+* 广告主（客户）：想通过平台来投放广告的出资人，通常是企业、品牌、个人等
+* 用户：直接使用软件的人，享受免费服务、观看广告
+
+
+> 出资人、媒体和受众这三者的利益博弈关系是广告活动永远的主主线,这一主线将贯穿于商业和产品形态的整个演化过程。
+>
+> --刘鹏《计算广告》
+
+---
+
+# 互联网广告分类
+
+* 样式形式上：开屏广告、搜索广告、信息流广告、激励广告、直播广告 etc.
+* 售卖方式上：品牌广告、竞价广告
+* 流量来源上：平台广告、联盟广告
+* 转化链路上：闭环广告、非闭环广告
+* 计费方式上：CPT、CPM、CPC、CPS、oCPM etc.
+
+.center[![:img 广告样式, 40%](8.png)]
+
+---
+
+# 广告行业概述
+
+* 应用类：引导用户下载应用，在应用内完成付费等动作
+* 代表行业：游戏、工具、小说、平台电商 etc.
+
+.center[![:img 应用类, 80%](1.png)]
+
+* 线索类：引导用户通过表单、电话留下联系方式，促成最终交易
+* 代表行业：教育、金融、医疗、车房家 etc.
+
+.center[![:img 线索类, 80%](2.png)]
+
+---
+
+# 广告行业概述
+
+* 电商类：引导用户通过闭环（平台自有）或非闭环（跳转其他平台）方式完成商品购买
+* 代表行业：母婴、服装、零售 etc.
+
+.center[![:img 电商类, 65%](3.png)]
+
+* 本地类：引导用户通过闭环或非闭环方式进行团购，完成到店交易
+* 代表行业：餐饮、酒店、旅行 etc.
+
+.center[![:img 电商类, 65%](4.png)]
+
+---
+
+# 广告系统简述
+
+* 主要设置：目标、定向、出价、创意
+  * 目标：为什么行为出价（付费、购买、线索 etc.），如何归因
+  * 定向：给谁看广告（性别、年龄、客户圈选人群 etc.）
+  * 出价：CPC->oCPM->ROI
+  * 创意：程序化创意
+
+---
+
+# 广告系统简述
+
+* 广告投放：有约束的优化问题
+  * 用户体验、客户体验、匹配效率
+* eCPM = 出价（Pbid）\* 预估点击率（eCTR）\* 预估转化率（eCVR）
+* 推荐系统：召回、粗排、精排
+* 归因&数据&计费：决定最终的转化度量
+
+.center[![:img 广告系统, 60%](5.jpeg)]
+
+---
+
+# 广告产品在干啥 - 从产品在干啥说起
+
+产品经理另类观：“推动事情做成”的“团队补集”
+
+* 如果团队里有开发，产品就负责开发以外的事情
+* 如果还有设计，那产品就不用画icon和海报了
+* 如果还有测试，那产品就只关心P0用例了
+* 如果还有运营，那产品就不用写使用教程了
+* 如果还有PMO，那就只需要写PRD了
+* 当然，如果连开发都没有，那产品经理就是“全集”了
+  * 不过会换个名字，叫“独立开发者”
+---
+
+# 广告产品在干啥 - 从产品在干啥说起
+
+产品经理另类观：成长路径
+
+* 能力模型：业务逻辑->执行能力->判断能力
+  * 业务逻辑：对业务、客户、行业，以及内外部本身的理解，能拆解需求
+  * 执行能力：如何将项目落地、与内外合作方高效沟通
+  * 判断能力：对项目本身是否做、怎么做，有清晰的判断（内部视角&全局视角）
+* 广告产品的特殊：业务逻辑复杂、执行要求高、判断要求高
+* 广告产品的分类：平台产品、策略产品、行业产品、端产品等
+
+---
+
+# 广告产品相关求职准备
+
+* 尽早积累经验，项目&实习经历为主
+* 多思考、多观察、高维思考（本部门/全公司）w
+* 圈子很小，但行业很大，多交流、多了解业务全貌
+* 不用急于求成，踏实了解好自己的模块，慢慢来反而快
+
+.center[![:img 翠翠, 50%](7.png)]
+
+---
+
+# Thanks & 交流
+
+【前期准备】
+1. 找第一份商业化产品实习需要做哪些准备？/如何零基础转行商业产品
+2. 商业化产品经理对商业化相关的技术如广告算法，开发等应该掌握到什么程度
+3. AI时代PM的能力拼图是什么
+4. 搜推广策略和普通的业务功能产品经理有什么共通之处呢？
+
+.center[![:img 翠翠, 45%](7.png)]
+
+.center[**Thanks!**]
+
+---
+
+# Thanks & 交流
+
+【工作困扰】
+1. 做推广策略实习的时候，会遇到很多杂活，比如评估数据，应该如何从这一部分知识中学到通用的方法论？
+
+【未来发展】
+1. 商业化产品发展前景如何？行业是否饱和？
+2. 互联网不同方向的产品经理未来发展路径，包括但不限于商业化、搜索策略、功能产品、AI产品、互联网金融产品。以及不同品类产品经理之间有没有门槛，可不可以轻松互转
+
+.center[![:img 翠翠, 45%](7.png)]
+
+.center[**Thanks!**]
+
+# 我的其他分享
+
+* [大厂故事系列活动-留守篇 for 弦计划](https://idealclover.cn/slides/9/#1)
+* [简历制作分享 for 弦计划](https://idealclover.cn/slides/8/#1)
+* [给在校学生画画饼 for 南大](https://idealclover.cn/slides/7/#1)
+* [产品经理介绍 for 南大](https://idealclover.cn/slides/6/#1)
+
+.center[![:img 翠翠, 45%](7.png)]
+
+
+    </textarea>
+    <script src="../../static/js/remark-latest.min.js"></script>
+    <script>
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        return (
+          '<img alt="' +
+          altText +
+          '" src="' +
+          url +
+          '" style="width: ' +
+          width +
+          '" />'
+        );
+      };
+      var slideshow = remark.create({ ratio: "16:9" });
+      var url_pure = document.URL.split("#")[0];
+      document.getElementById("this-slide-url").innerHTML = url_pure;
+      document.getElementById("this-slide-url").href = url_pure;
+      new QRCode(document.getElementById("qrcode"), {
+        text: url_pure,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+      // new QRCode(document.getElementById("idealcloverqr"), {
+      //   text: "https://idealclover.top",
+      //   width: 256,
+      //   height: 256,
+      //   colorDark: "#000000",
+      //   colorLight: "#ffffff",
+      //   correctLevel: QRCode.CorrectLevel.H
+      // });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-112910356-7");
+    </script>
+  </body>
+</html>

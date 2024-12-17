@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      瞎写写的产品新人成长建议
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../static/css/katex.min.css" />
+    <link rel="stylesheet" href="../../static/css/wiki.css" />
+    <link rel="stylesheet" href="../../static/css/codehilite.css" />
+    <script src="../../static/js/katex.min.js"></script>
+    <script src="../../static/js/qrcode.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/css/slides.css" />
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+## 在线查看幻灯片
+
+.center[<a href="." id="this-slide-url" target="_blank"></a>]
+
+<div id="qrcode" style="margin: 0 auto; width: 286px;"></div>
+
+---
+
+public: True
+class: center, middle
+
+# 瞎写写的产品新人成长建议
+
+## by idealclover
+
+---
+
+# 开始前 - 小调查
+
+* 还没秋招 - 1
+* 有秋招offer，还没实习 - 2
+* 有秋招offer，还在实习 - 3
+* 有秋招offer，已正式入职 - 4
+* 亲友团炸鱼 - 5
+
+---
+
+## 我是谁
+
+* @idealclover
+* 2020 - 南大本科毕业
+* 校招互联和大厂，商业化平台方向，4年+
+* 独立开发者、博主、UP主...
+* 个人主页 https://idealclover.cn
+
+---
+
+## 我的经历
+
+* 在校期间：个人项目&实习 -> 校招
+* 20年：熟悉业务、处理迭代需求【业务】
+* 21年：临时紧急需求【信心】
+* 22年-23年：参与重点项目，负责独立模块【判断】
+* 24年：随重点项目独立负责方向【责任】
+
+
+---
+
+## 心态调整：迷茫是必经之路，破局在久久为功
+
+* 破除学生思维：成功的道路不止一条
+  * 每个人的成长速度并不相同
+  * 工作也只是工作，需要有爱好与兴趣陪伴
+* 下限调低：不必一步登天
+  * 人生是一场马拉松，不必要求时时进步
+  * 能独立生存本身就是优秀线以上
+  * 每个阶段都有每个阶段的难题，问题并没有幼稚与成熟区别
+* 上限调高：用时间找到自我
+  * 尺度放宽，找到自己努力的方向，不必追赶热点
+  * 世界上并不存在“版本答案”，完善自己才是正道
+  * 要对未来有种盲目的乐观，“冰雕还是冰碴子，都会融化流入大海”
+
+---
+
+## 个人成长：能力模型
+
+* 能力模型：业务逻辑->执行能力->判断能力
+  * 业务逻辑：对业务、客户、行业，以及内外部本身的理解
+  * 执行能力：如何将项目落地、与内外合作方高效沟通
+  * 判断能力：对项目本身是否做、怎么做，有清晰的判断（内部视角&全局视角）
+
+---
+
+## 工作处理：区分并对齐优先级，合理分配精力
+
+* 核心项目：及时主动同步、力求超标准
+* 日常工作：整理流程、优化流程、反思沉淀分享
+* 像做产品一样提升自己的效率
+* 面向“离职”梳理自己的工作
+
+---
+
+## 所谓“向上管理”：管理×合作√
+
+* “老板”和“下属”：彼此合作、逐渐互信的关系
+  * 老板：资源、决策、组织
+  * 下属：执行、反馈、发现
+* 执行、反馈、发现：你是老板的身体延伸
+  * 执行：扎实地完成每项老板关心的任务
+  * 反馈：问题及时暴露、提供信息充分决策
+  * 发现：更高视角难以发现的洞察与问题
+
+
+---
+
+## 合作方&同事：也是合作
+
+* 不管是熟悉上级和同事的风格，还是让周围人熟悉&相信自己，都很重要
+* 做一些事情需要对团队的责任感和归属感
+* 盲目换团队/换方向未必解决本质问题
+
+---
+
+## “斗罢艰险又出发”
+
+* “我们都会拥有美好的未来”
+
+.center[![:img 翠翠, 30%](7.png)]
+
+.center[**Thanks!**]
+
+    </textarea>
+    <script src="../../static/js/remark-latest.min.js"></script>
+    <script>
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        return (
+          '<img alt="' +
+          altText +
+          '" src="' +
+          url +
+          '" style="width: ' +
+          width +
+          '" />'
+        );
+      };
+      var slideshow = remark.create({ ratio: "16:9" });
+      var url_pure = document.URL.split("#")[0];
+      document.getElementById("this-slide-url").innerHTML = url_pure;
+      document.getElementById("this-slide-url").href = url_pure;
+      new QRCode(document.getElementById("qrcode"), {
+        text: url_pure,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+      // new QRCode(document.getElementById("idealcloverqr"), {
+      //   text: "https://idealclover.top",
+      //   width: 256,
+      //   height: 256,
+      //   colorDark: "#000000",
+      //   colorLight: "#ffffff",
+      //   correctLevel: QRCode.CorrectLevel.H
+      // });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-112910356-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-112910356-7");
+    </script>
+  </body>
+</html>
